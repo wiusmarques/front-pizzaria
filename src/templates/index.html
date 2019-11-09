@@ -1,0 +1,131 @@
+{% set mainClass = "home" %}
+{% extends "partials/layout.html" %}
+{% block content %}
+<section class="content-banner">
+	<div class="swiper-container swiper-banner">
+		<div class="swiper-wrapper">
+			{% for i in range (0,3) -%}
+			<div class="swiper-slide">
+				<div class="content-banner-home" style="background: url(../assets/images/home/bg-home.png) center no-repeat;">
+					
+					<!--- SECTION BG -->
+					<div class="content-banner-writer container d-none">
+						<div class="content-banner-writer-text">
+							<p>Promoção Pizza Calabresa Gigante!</p>
+							<p>Por apenas: 29,90.</p>
+							<a class="content-banner-writer-text-btn" href="cardapios.html"> Conferir</a>
+						</div>
+					</div>
+					<!-------------->
+
+					<!---- SECTION NOT BG -->
+					<div class="content-banner-writer container">
+						<div class="content-banner-writer-text-not-bg">
+							<p>Promoção Pizza Calabresa Gigante!</p>
+							<p>Por apenas: 29,90.</p>
+							<a class="content-banner-writer-text-btn" href="cardapios.html"> Conferir</a>
+						</div>
+					</div>
+					<!----------------->
+					
+				</div>
+			</div>
+			{%- endfor %}
+		</div>
+		<div class="swiper-pagination swiper-pagination-banner"></div>
+	</div>
+</section>
+<section data-aos="fade-up" data-aos-delay="500" class="content-home-products">
+	<div class="content-home-products-itens container">
+		<div class="content-home-products-itens-header">
+			<p>Confira os nossos produtos.</p>
+		</div>
+		<div class="content-home-products-itens-body">
+			<div class="swiper-container swiper-products">
+				<div class="swiper-wrapper">
+					{% for i in range (0,6) -%}
+					<div class="swiper-slide">
+						<a class="content-home-products-itens-body-cards" href="cardapios.html">
+							<div class="content-home-products-itens-body-cards-image">
+								<img class="img-fluid" src="../assets/images/home/image-card-produtos.jpg" alt="Image Card Produtos" />
+							</div>
+							<div class="content-home-products-itens-body-cards-texts">
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum dolor sit amet adipiscing elit.</p>
+								<p>R$29.90</p>
+							</div>
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+				<div class="swiper-button-next swiper-button-next-products">
+
+				</div>
+				<div class="swiper-button-prev swiper-button-prev-products">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section data-aos="fade-down" data-aos-delay="500" class="content-home-information">
+	<div class="content-home-information-itens container">
+		<div class="content-home-information-itens-texts">
+			<p>About us</p>
+			<p>Lorem ipsum dolor sit amet adipiscing elit</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur.</p>
+		</div>
+		<a class="content-home-information-itens-link" href="sobre.html">
+			Ver mais
+		</a>
+	</div>
+</section>
+<section data-aos="fade-right" data-aos-delay="500" class="content-home-depoiments">
+	<div class="content-home-depoiments-itens container">
+		<div class="content-home-depoiments-itens-header">
+			<p>Testimonials</p>
+			<p>What People Say</p>
+		</div>
+		<div class="content-home-depoiments-itens-body">
+			<div class="swiper-container swiper-depoiments">
+				<div class="swiper-wrapper">
+					{% for i in range (0,3) %}
+					<div class="swiper-slide">
+						<div class="content-home-depoiments-itens-body-card">
+							<div class="content-home-depoiments-itens-body-card-image">
+								<img class="img-fluid" src="../assets/images/home/image-comentarios.png" alt="Image Card Blog" />
+							</div>
+							<div class="content-home-depoiments-itens-body-card-texts">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+									et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+									aliquip ex ea commodo consequat.</p>
+								<p>Hombard Obelshki</p>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+				<div class="swiper-button-next swiper-button-next-depoiments">
+					<svg width="30" height="30" aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-right"
+						role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+						<path fill="#fff"
+							d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"
+							class=""></path>
+					</svg>
+				</div>
+				<div class="swiper-button-prev swiper-button-prev-depoiments">
+					<svg width="30" height="30" aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-left"
+						role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+						<path fill="#fff"
+							d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"
+							class=""></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

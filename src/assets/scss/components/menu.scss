@@ -1,0 +1,42 @@
+@import "../settings/variables";
+
+.content-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: #000;
+  z-index: 20;
+  padding-top: 30px;
+  right: -100%;
+  transition: 800ms ease-out;
+  &-active {
+    right: 0px;
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    &-logo {
+      img {
+        max-width: 50px;
+      }
+    }
+  }
+  &-links {
+    font-size: 20px;
+    color: $white !important;
+    font-family: "Font Bold";
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    transition: 500ms;
+    &:hover,
+    &:focus {
+      color: $orange !important;
+    }
+  }
+}

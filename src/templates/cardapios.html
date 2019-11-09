@@ -1,0 +1,121 @@
+{% set mainClass = "cardapios" %}
+{% extends "partials/layout.html" %}
+{% block content %}
+<section class="content-cardapios position-relative">
+	<div class="content-cardapios-banner">
+		<div class="content-banner-writer-default">
+			<p>We make pizza lika a Pro</p>
+			<h1 class="content-banner-writer-default-title">Discover OUR ME</h1>
+			<div class="content-banner-writer-default-link">
+				<a class="content-banner-writer-default-link-itens" href="index.html">
+					Home
+				</a>
+				<a class="content-banner-writer-default-link-itens" href="cardapios.html">
+					/ Cardápios
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="content-cardapios-products" data-aos-delay="500" data-aos="fade-down">
+	<div class="content-cardapios-products-itens container">
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+					aria-controls="nav-home" aria-selected="true">
+					Pizzas</a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+					aria-controls="nav-profile" aria-selected="false">Hamburguers</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+					aria-controls="nav-contact" aria-selected="false">Bebidas</a>
+				<a class="nav-item nav-link" id="four-div-tab" data-toggle="tab" href="#four-div" role="tab"
+					aria-controls="nav-contact" aria-selected="false">Doces</a>
+				<a class="nav-item nav-link" id="five-div-tab" data-toggle="tab" href="#five-div" role="tab"
+					aria-controls="nav-contact" aria-selected="false">Saladas</a>
+			</div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				<div class="row">
+					{% for i in range (0,12) -%}
+					<div class="content-cardapios-products-itens-cards col-12 col-md-6 col-lg-4 col-xl-3">
+						<img class="img-fluid" src="../assets/images/cardapios/image-pizza-1.jpg" alt="Image Pizza" />
+						<div class="content-cardapios-products-itens-cards-texts">
+							<p>Margherita</p>
+							<p>Lorem ispum dolor sit amet, consectetur adipiscing elit, sendo do eius-mod tempor incididunt.</p>
+							<div class="content-cardapios-products-itens-cards-texts-price">
+								<p>R$29.90</p>
+							</div>
+						</div>
+					</div>
+					{%- endfor %}
+				</div>
+			</div>
+			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<div class="row">
+					{% for i in range (0,12) -%}
+					<div class="content-cardapios-products-itens-cards col-12 col-md-6 col-lg-4 col-xl-3">
+						<img class="img-fluid" src="../assets/images/cardapios/image-pizza-1.jpg" alt="Image Pizza" />
+						<div class="content-cardapios-products-itens-cards-texts">
+							<p>Margherita</p>
+							<p>Lorem ispum dolor sit amet, consectetur adipiscing elit, sendo do eius-mod tempor incididunt.</p>
+							<div class="content-cardapios-products-itens-cards-texts-price">
+								<p>R$29.90</p>
+							</div>
+						</div>
+					</div>
+					{%- endfor %}
+				</div>
+			</div>
+			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+				<div class="row">
+					{% for i in range (0,12) -%}
+					<div class="content-cardapios-products-itens-cards col-12 col-md-6 col-lg-4 col-xl-3">
+						<img class="img-fluid" src="../assets/images/cardapios/image-pizza-1.jpg" alt="Image Pizza" />
+						<div class="content-cardapios-products-itens-cards-texts">
+							<p>Margherita</p>
+							<p>Lorem ispum dolor sit amet, consectetur adipiscing elit, sendo do eius-mod tempor incididunt.</p>
+							<div class="content-cardapios-products-itens-cards-texts-price">
+								<p>R$29.90</p>
+							</div>
+						</div>
+					</div>
+					{%- endfor %}
+				</div>
+			</div>
+			<div class="tab-pane fade" id="four-div" role="tabpanel" aria-labelledby="four-div-tab">
+				<div class="row">
+					{% for i in range (0,12) -%}
+					<div class="content-cardapios-products-itens-cards col-12 col-md-6 col-lg-4 col-xl-3">
+						<img class="img-fluid" src="../assets/images/cardapios/image-pizza-1.jpg" alt="Image Pizza" />
+						<div class="content-cardapios-products-itens-cards-texts">
+							<p>Margherita</p>
+							<p>Lorem ispum dolor sit amet, consectetur adipiscing elit, sendo do eius-mod tempor incididunt.</p>
+							<div class="content-cardapios-products-itens-cards-texts-price">
+								<p>R$29.90</p>
+							</div>
+						</div>
+					</div>
+					{%- endfor %}
+				</div>
+			</div>
+			<div class="tab-pane fade" id="five-div" role="tabpanel" aria-labelledby="five-div-tab">
+				<div class="row">
+					{% for i in range (0,12) -%}
+					<div class="content-cardapios-products-itens-cards col-12 col-md-6 col-lg-4 col-xl-3">
+						<img class="img-fluid" src="../assets/images/cardapios/image-pizza-1.jpg" alt="Image Pizza" />
+						<div class="content-cardapios-products-itens-cards-texts">
+							<p>Margherita</p>
+							<p>Lorem ispum dolor sit amet, consectetur adipiscing elit, sendo do eius-mod tempor incididunt.</p>
+							<div class="content-cardapios-products-itens-cards-texts-price">
+								<p>R$29.90</p>
+							</div>
+						</div>
+					</div>
+					{%- endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

@@ -1,0 +1,111 @@
+@import "../settings/variables";
+
+.footer-location {
+  background: #f2f2f2;
+  box-shadow: 0px 0px 3px #ccc;
+  padding: 50px 0px;
+  @media (max-width: 992px){
+    padding: 30px 0px;
+  }
+  &-itens {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 992px){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &-elements {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 17%;
+        margin: 30px auto 0;
+        background: $orange;
+      }
+      &:first-of-type{
+        margin-bottom: 30px;
+      }
+      &-text {
+        width: 60%;
+        text-align: center;
+        margin-bottom: 20px;
+        p {
+          font-size: 18px;
+          color: #414042;
+          font-family: "Font Medium";
+          margin-bottom: 0;
+          line-height: 24px;
+          text-align: center;
+          @media (min-width: 992px) and (max-width: 1200px){
+            height: 70px;
+          }
+          @media (max-width: 992px){
+            font-size: 16px;
+          }
+        }
+      }
+      &-telphone {
+        font-size: 16px;
+        color: #414042;
+        font-family: "Font Medium";
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        &:hover,&:focus {
+          color: #414042;
+        }
+        @media (max-width: 992px){
+          font-size: 14px;
+        }
+      }
+      &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 180px;
+        color: $white !important;
+        background: $orange;
+        border: 2px solid $orange;
+        font-size: 16px;
+        font-family: 'Font Bold';
+        border-radius: 2px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        transition: 500ms;
+        @media (max-width: 992px){
+          font-size: 14px;
+        }
+        &:hover,&:focus {
+          cursor: pointer;
+          background: $white;
+          color: $orange !important;
+        }
+      }
+      &-hours {
+        background: #EDEDED;
+        box-shadow: 0px 0px 2px #ccc;
+        padding: 10px 45px;
+        display: flex;
+        align-items: center;
+        width: 300px;
+        text-align: center;
+        justify-content: center;
+        @media (max-width: 992px){
+          width: 290px;
+        }
+        p {
+          font-size: 14px;
+          color: $black;
+          font-family: 'Font Light';
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

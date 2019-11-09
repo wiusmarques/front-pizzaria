@@ -1,0 +1,23 @@
+
+@include fontFace('Font Bold','../fonts/Roboto-Bold.ttf');
+@include fontFace('Font Light','../fonts/Roboto-Light.ttf');
+@include fontFace('Font Medium','../fonts/Roboto-Medium.ttf');
+@include fontFace('Font Regular','../fonts/Roboto-Regular.ttf');
+@include fontFace('Font Italic','../fonts/Roboto-Italic.ttf');
+
+.font-bold {
+	font-family: 'Font Bold';
+}
+.font-light {
+	font-family: 'Font Light';
+}
+.font-medium {
+	font-family: 'Font Medium';
+}
+.font-regular {
+	font-family: 'Font Regular';
+}
+.font-italic {
+	font-family: 'Font Italic';
+}
+

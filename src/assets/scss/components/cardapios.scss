@@ -1,0 +1,74 @@
+@import "../settings/variables";
+
+.content-cardapios-products {
+	padding: 100px 0px;
+	padding-bottom: 50px;
+	@media (max-width: 991px){
+		padding: 50px 0px;
+		padding-bottom: 0px;
+	}
+	&-itens {
+		.nav-tabs {
+			border: 0;
+			margin-bottom: 50px;
+			display: flex;
+			justify-content: center;
+			.nav-link {
+				border-style: none;
+				font-size: 14px;
+				color: $black !important;
+				font-family: 'Font Bold';
+				text-transform: uppercase;
+				padding: 0px 30px 0px 0px;
+				transition: 500ms;
+				&:last-of-type{
+					padding-right: 0;
+				}
+				@media (max-width: 991px){
+					font-size: 12px;
+					padding-right: 15px;
+				}
+				&:hover,&:focus {
+					color: $orange !important;
+				}
+			}
+			.active {
+				color: $orange !important;
+			}
+		}
+		&-cards {
+			text-align: center;
+			margin-bottom: 50px;
+			transition: 500ms;
+			img {
+				max-width: 100px;
+				margin-bottom: 20px;
+			}
+			&-texts {
+				text-align: center;
+				p {
+					font-size: 13px;
+					color: $black;
+					font-family: 'Font Medium';
+					margin-bottom: 5px;
+					line-height: 1.6;
+					&:first-of-type{
+						text-transform: uppercase;
+						font-family: 'Font Bold';
+						font-size: 14px;
+					}
+				}
+				&-price {
+					p {
+						font-size: 30px !important;
+						color: $black;
+						font-family: 'Font Bold';
+						margin-bottom: 0px;
+					}
+				
+				}
+			}
+		}
+	
+	}
+}

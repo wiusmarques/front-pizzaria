@@ -1,0 +1,32 @@
+@mixin fontFace($family,$url){
+	@font-face {
+	    font-family: $family;
+	    src: url('#{$url}');
+	}
+}
+
+@mixin banner($way, $height) {
+  background-image: url($way);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: $height;
+  height: $height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+}
+
+@mixin center-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

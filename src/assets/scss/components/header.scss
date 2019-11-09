@@ -1,0 +1,131 @@
+@import "../settings/variables";
+.content-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0,0,0,0.1);
+  @media (max-width: 992px) {
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: 500ms ease-in-out;
+    z-index: -1;
+    transform: translateY(-100px);
+  }
+  &-scrolled {
+    &::after {
+      background: $black;
+      top: 0;
+      transform: translateY(0px);
+      box-shadow: 0px 0px 2px #ccc;
+    }
+  }
+  &-logo {
+    display: flex;
+    transition: 500ms;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      p {
+        color: $orange;
+      }
+    }
+    img {
+      max-width: 50px;
+    }
+    p {
+      font-size: 25px;
+      font-family: "Font Bold";
+      color: $white;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+      margin-left: 10px;
+      transition: 500ms;
+    }
+  }
+  &-menu {
+    &-links {
+      font-size: 16px;
+      color: $white !important;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+      padding: 0px 30px;
+      transition: 500ms;
+      font-family: "Font Bold";
+      &:hover,
+      &:focus {
+        color: $orange !important;
+        cursor: pointer;
+      }
+    }
+    &-hamburguer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 50px;
+      &-item {
+        width: 32px;
+        height: 2px;
+        background-color: #fff;
+        display: block;
+        position: relative;
+        transform-origin: center;
+        transition: 0.5s ease-in-out;
+        margin: 0 auto;
+        &-active {
+          background: 0px;
+          &::before {
+            content: "";
+            top: 0 !important;
+            transform: rotate(-45deg) !important;
+          }
+          &::after {
+            content: "";
+            bottom: 0 !important;
+            transform: rotate(45deg) !important;
+          }
+        }
+        &::before,
+        &:after {
+          content: "";
+          display: block;
+          background-color: #fff;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: 0.5s ease-in-out;
+        }
+        &::before {
+          top: -10px;
+        }
+        &::after {
+          bottom: -10px;
+        }
+      }
+      p {
+        font-size: 12px;
+        font-family: 'Font Light';
+        color: $white;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        margin-top: 15px;
+        line-height: 1;
+        width: 50px;
+        text-align: center;
+      }
+    }
+  }
+}

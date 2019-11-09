@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<!-- CSS PROJECT COMPONENTS FRAMEWORKS   -------------->
+	<!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/swiper.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!---------------------//////////////////--->
+
+	<!-- CSS DEFAULT  -------------->
+	<link rel="stylesheet" href="../assets/css/generic.min.css">
+	<!---------------------//////////////////--->
+
+
+	<!-- CSS PROJECT COMPONENTS   -------------->
+	<link rel="stylesheet" href="../assets/css/header.min.css">
+	<link rel="stylesheet" href="../assets/css/menu.min.css">
+	<link rel="stylesheet" href="../assets/css/footer.min.css">
+	<link rel="stylesheet" href="../assets/css/footer-location.min.css">
+	<!-------------------////////////////////////-->
+
+
+	<!--- HOME  -->
+	<link rel="stylesheet" href="../assets/css/{{ mainClass }}.min.css">
+	<!--------------------------------------------------->
+</head>
+
+<body>
+	{% include "partials/header.html" %}
+	{% include "partials/menu.html" %}
+
+	<main class="{{ mainClass }}">
+		{% block content %}{% endblock %}
+	</main>
+	{% include "partials/modal-telphone.html" %}
+	{% include "partials/footer-location.html" %}
+	{% include "partials/footer.html" %}
+
+
+	<!-- BACKDROPS FORMS -->
+	<div class="backdrop__bar d-none"></div>
+	<!----------------------------------------------------->
+	{% include "partials/scripts.html" %}
+
+</body>
+
+</html>

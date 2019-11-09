@@ -1,0 +1,342 @@
+@import "../settings/variables";
+
+.content-about {
+  padding-bottom: 90px;
+  @media (max-width: 991px) {
+    padding-bottom: 50px;
+  }
+  &-itens {
+    &-div {
+      display: flex;
+      margin-bottom: 80px;
+      @media (max-width: 991px) {
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+    }
+    &-image {
+      width: 50%;
+      margin-right: 50px;
+      @media (max-width: 991px) {
+        width: 100%;
+        margin-right: initial;
+        text-align: center;
+        img {
+          max-width: 70%;
+        }
+      }
+    }
+    &-texts {
+      width: 50%;
+      padding-top: 100px;
+      @media (min-width: 992px) and (max-width: 1200px) {
+        padding-top: 50px;
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+        padding-top: 30px;
+      }
+      p {
+        &:first-of-type {
+          font-size: 30px;
+          font-family: "Font Regular";
+          color: $black;
+          margin-bottom: 0px;
+          @media (max-width: 991px) {
+            font-size: 24px;
+          }
+        }
+        &:nth-of-type(2) {
+          font-size: 20px;
+          font-family: "Font Regular";
+          color: $black;
+          @media (max-width: 991px) {
+            font-size: 16px;
+          }
+        }
+        &:not(:first-of-type, :nth-of-type(2)) {
+          font-size: 14px;
+          font-family: "Font Regular";
+          color: $black;
+        }
+      }
+    }
+    &-team {
+      text-align: center;
+      &-header {
+        width: 70%;
+        margin: 0 auto;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        p {
+          &:first-of-type {
+            font-size: 30px;
+            color: $black;
+            font-family: "Font Bold";
+            @media (max-width: 991px) {
+              font-size: 24px;
+            }
+          }
+          &:nth-of-type(2) {
+            font-size: 20px;
+            font-family: "Font Regular";
+            color: $black;
+            @media (max-width: 991px) {
+              font-size: 16px;
+            }
+          }
+          &:not(:first-of-type, :nth-of-type(2)) {
+            font-size: 14px;
+            font-family: "Font Regular";
+            color: $black;
+          }
+        }
+      }
+      &-body {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 991px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        img {
+          max-width: 300px;
+          @media (max-width: 991px) {
+            max-width: 200px;
+          }
+        }
+        &-image {
+          position: relative;
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+        }
+        &-share {
+          &-elements {
+            width: 350px;
+            background: rgba(0, 0, 0, 0.8);
+            padding-top: 30px;
+            padding-bottom: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            @media (max-width: 991px) {
+              width: 100%;
+              padding-top: 20px;
+              padding-bottom: 10px;
+            }
+          }
+          p {
+            &:first-of-type {
+              font-size: 18px;
+              font-family: "Font Regular";
+              color: $white;
+              text-transform: uppercase;
+              margin-bottom: 0px;
+            }
+            &:last-of-type {
+              font-size: 18px;
+              font-family: "Font Light";
+              color: $white;
+              margin-bottom: 0px;
+            }
+          }
+          &-links {
+            margin-top: 10px;
+            a {
+              padding-right: 20px;
+              &:last-of-type {
+                padding-right: initial;
+              }
+              &:hover,
+              &:focus {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.content-cardapios {
+  &-banner {
+    background: url("../images/contact/bg-contact.jpg") center no-repeat;
+    height: 360px;
+    background-size: cover;
+  }
+}
+.content-contact {
+	padding: 80px 0px;
+	@media (max-width: 991px){
+		padding: 50px 0px;
+	}
+  &-itens {
+    &-header {
+      text-align: center;
+      width: 60%;
+      margin: 0px auto 50px auto;
+      @media (max-width: 991px) {
+        margin-bottom: 30px;
+        width: 100%;
+      }
+      h1 {
+        font-size: 30px;
+        color: $black;
+        font-family: "Font Regular";
+        @media (max-width: 991px) {
+          margin-bottom: 24px;
+        }
+      }
+      p {
+        &:first-of-type {
+          font-size: 20px;
+          color: $black;
+          font-family: "Font Regular";
+          @media (max-width: 991px) {
+            margin-bottom: 16px;
+          }
+        }
+        &:last-of-type {
+          font-size: 14px;
+          color: $black;
+          font-family: "Font Regular";
+          @media (max-width: 991px) {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+    &-body {
+			display: flex;
+			@media (max-width: 991px){
+				flex-direction: column;
+			}
+      &-description {
+        &-elements {
+          display: flex;
+          align-items: center;
+					margin-bottom: 50px;
+					@media (max-width: 991px){
+						justify-content: center;
+						margin-bottom: 30px;
+					}
+          &:hover,
+          &:focus {
+            cursor: pointer;
+          }
+          &-icon {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #cccccc;
+            border-radius: 100%;
+            margin-right: 20px;
+						transition: 500ms;
+						@media (max-width: 991px){
+							width: 50px;
+							height: 50px;
+							margin-right: 10px;
+						}
+            svg {
+              fill: $orange;
+              transition: 500ms;
+            }
+            &:hover,
+            &:focus {
+              background: $orange;
+              border: 1px solid $orange;
+              svg {
+                fill: $white;
+              }
+            }
+          }
+          &-text {
+						@media (max-width: 991px){
+							width: 250px;
+						}
+            p {
+              &:first-of-type {
+                font-size: 16px;
+                color: $black;
+                font-family: "Font Bold";
+								margin-bottom: 0px;
+								@media (max-width: 991px){
+									font-size: 14px;
+								}
+              }
+              &:last-of-type {
+                font-size: 14px;
+                color: #adadad;
+                font-family: "Font Bold";
+								margin-bottom: 0px;
+								@media (max-width: 991px){
+									font-size: 12px;
+								}
+              }
+            }
+          }
+        }
+      }
+      &-form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+				width: 60%;
+				@media (max-width: 991px){
+					width: 100%;
+					margin-left: initial;
+				}
+        input {
+          height: 40px;
+          padding-left: 15px;
+          font-size: 14px;
+          font-family: "Font Regular";
+          color: #666666;
+          margin-bottom: 20px;
+          border: 1px solid #ebebeb;
+          outline: none;
+          width: 100%;
+        }
+        textarea {
+          min-height: 90px;
+          padding-left: 15px;
+          padding-top: 15px;
+          font-size: 14px;
+          font-family: "Font Regular";
+          color: #666666;
+          margin-bottom: 20px;
+          border: 1px solid #ebebeb;
+          outline: none;
+          width: 100%;
+          resize: none;
+        }
+        &-btn {
+          width: 160px;
+          height: 40px;
+          margin: 30px auto 0px auto;
+          font-size: 16px;
+          color: $white !important;
+          font-family: Font Bold;
+          background: $orange;
+          border: 2px solid $orange;
+          border-radius: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+					transition: 0.5s;
+					&:hover,&:focus {
+						cursor: pointer;
+						color: $orange !important;
+						background: $white;
+					}
+        }
+      }
+    }
+  }
+}
